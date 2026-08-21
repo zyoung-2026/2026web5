@@ -659,14 +659,24 @@
   <div class="filters-bar">
     <div class="filter-tags">
       <span class="filter-label"><i class="fa-solid fa-filter"></i> 부서 필터:</span>
-      <select id="deptFilter" class="filter-select" onchange="renderCurrentView()">
-        <option value="ALL">전체 부서 보기</option>
-        <option value="교무기획부">교무기획부</option>
-        <option value="학생안전부">학생안전부</option>
-        <option value="진로진학부">진로진학부</option>
-        <option value="교육과정부">교육과정부</option>
-        <option value="창의체험부">창의체험부</option>
-      </select>
+     <select id="deptFilter" onchange="renderCalendar()">
+  <option value="ALL">전체 부서 보기</option>
+  <option value="교무기획부">교무기획부</option>
+  <option value="학생안전부">학생안전부</option>
+  <option value="진로진학부">진로진학부</option>
+  <option value="교육과정부">교육과정부</option>
+  <option value="창의체험부">창의체험부</option>
+  <option value="교육평가부">교육평가부</option>
+  <option value="생활안전부">생활안전부</option>
+  <option value="수업혁신부">수업혁신부</option>
+  <option value="미래과학부">미래과학부</option>
+  <option value="예체능복지부">예체능복지부</option>
+  <option value="1학년교육부">1학년교육부</option>
+  <option value="2학년교육부">2학년교육부</option>
+  <option value="3학년교육부">3학년교육부</option>
+  <option value="행정실">행정실</option>
+  <option value="기타">기타</option>
+</select>
     </div>
     <div class="db-status-badge">
       <i class="fa-solid fa-database"></i> IndexedDB 작동 중 (자동 동기화)
@@ -754,19 +764,23 @@
       </div>
       <div class="form-group">
         <label>담당 부서</label>
-        <select id="evtDept" class="form-control">
-          <option value="교무기획부">교무기획부</option>
-          <option value="학생안전부">교육평가부</option>
-          <option value="진로진학부">교육과정부</option>
-          <option value="교육과정부">미래과학부</option>
-          <option value="창의체험부">창의체험부</option>
-          <option value="창의체험부">예체능복지부</option>
-          <option value="학생안전부">1학년교육부</option>
-          <option value="학생안전부">2학년교육부</option>
-          <option value="학생안전부">3학년교육부</option>
-          <option value="학생안전부">기타 </option>
-          <option value="행정실">행정실</option>
-        </select>
+        <select id="eventDept">
+  <option value="교무기획부">교무기획부</option>
+  <option value="학생안전부">학생안전부</option>
+  <option value="진로진학부">진로진학부</option>
+  <option value="교육과정부">교육과정부</option>
+  <option value="창의체험부">창의체험부</option>
+  <option value="교육평가부">교육평가부</option>
+  <option value="생활안전부">생활안전부</option>
+  <option value="수업혁신부">수업혁신부</option>
+  <option value="미래과학부">미래과학부</option>
+  <option value="예체능복지부">예체능복지부</option>
+  <option value="1학년교육부">1학년교육부</option>
+  <option value="2학년교육부">2학년교육부</option>
+  <option value="3학년교육부">3학년교육부</option>
+  <option value="행정실">행정실</option>
+  <option value="기타">기타</option>
+</select>
       </div>
     </div>
     <div class="modal-footer">
